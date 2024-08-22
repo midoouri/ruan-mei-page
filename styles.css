@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "against";
+    src: url(against.ttf);
+}
+
+@font-face {
+    font-family: "classy vogue";
+    src: url(Classyvogueregular.ttf);
+}
+
+:root {
+    --cor-de-fundo: #011638;
+    --cor-primaria: #b0edd3;
+    --cor-secundaria: #0091AD;
+    --cor-terciaria: #f9e2d1;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-terciaria);
+}
+
+.nome-destaque {
+    color: var(--cor-primaria);
+    font-size: 4.37rem;
+    font-family: "against";
+    display: flex;
+    text-align: center;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__menu__link {
+    padding: 6px 15px;
+    font-family: "classy vogue";
+    font-size: 1.37rem;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding:6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    font-family: "classy vogue";
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+}
+
+.apresentacao__paragrafos {
+    width: 620px;
+    font-family: "classy vogue";
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: justify;
+    gap: 5px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.62rem;
+}
+
+.elemento {
+    color: var(--cor-secundaria);
+    padding: 3px;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.apresentacao__links__subtitulo {
+    font-size: 1.43rem;
+    margin: 0px;
+}
+
+.apresentacao__links__botao {
+    border: 2px solid var(--cor-primaria);
+    width: 270px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    transition: all 0.3s;
+
+}
+
+.apresentacao__links__botao:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.rodape {
+    padding: 10px;
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-primaria);
+    text-align: center;
+    font-family: "classy vogue";
+    font-size: 1.12rem;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+@media (max-width: 1150px) {
+    .cabecalho__menu {
+        padding: 5%;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
